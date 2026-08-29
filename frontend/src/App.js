@@ -4,6 +4,9 @@ import './App.css';
 import TaskCard from './components/TaskCard';
 import StatCard from './components/StatCard';
 import AddTaskForm from './components/AddTaskForm';
+// Paste this right below your import blocks
+axios.defaults.baseURL = 'https://task-dashboard-backend-one.vercel.app';
+
 
 function App() {
   const [tasks, setTasks] = useState([]);
